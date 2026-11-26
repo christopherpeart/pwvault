@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Shared password</title>
+  <link rel="stylesheet" href="/static/redeem.css">
+  <script src="/static/redeem.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Shared password</h1>
+    <p id="status">Loading…</p>
+
+    <form id="pin-form" hidden>
+      <label for="pin">PIN</label>
+      <input id="pin" name="pin" autocomplete="off" autocapitalize="characters"
+             spellcheck="false" maxlength="12" placeholder="6 characters" required>
+      <button type="submit">Show password</button>
+      <p class="hint">The PIN was sent to you separately. After 3 wrong PINs this link stops working.</p>
+    </form>
+
+    <button id="reveal" type="button" hidden>Show password</button>
+
+    <dl id="result" hidden>
+      <dt>Account</dt><dd id="r-name"></dd>
+      <dt>Username</dt><dd id="r-username"></dd>
+      <dt>Password</dt>
+      <dd><code id="r-password"></code> <button id="copy" type="button">Copy</button></dd>
+    </dl>
+  </main>
+</body>
+</html>

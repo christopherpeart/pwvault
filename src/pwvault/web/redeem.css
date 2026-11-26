@@ -1,0 +1,16 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+[hidden] { display: none !important; }  /* otherwise `dl { display: grid }` wins */
+body { margin: 0; display: grid; place-items: center; min-height: 100vh; }
+main { width: min(26rem, 92vw); padding: 2rem; border: 1px solid #8884; border-radius: 12px; }
+h1 { font-size: 1.3rem; margin-top: 0; }
+label { display: block; font-weight: 600; margin-bottom: .4rem; }
+input { font: inherit; font-size: 1.4rem; letter-spacing: .2em; text-transform: uppercase;
+        width: 100%; box-sizing: border-box; padding: .5rem; }
+button { font: inherit; padding: .5rem 1rem; margin-top: .8rem; cursor: pointer; }
+.hint { font-size: .85rem; opacity: .75; }
+.error { color: #c0392b; }
+dl { display: grid; grid-template-columns: auto 1fr; gap: .5rem 1rem; align-items: baseline; }
+dt { font-weight: 600; }
+dd { margin: 0; overflow-wrap: anywhere; }
+code { font-size: 1.1rem; }
+dd button { margin-top: 0; padding: .2rem .6rem; }

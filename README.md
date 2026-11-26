@@ -17,7 +17,6 @@ QR code, without the server ever being able to read it.
 - **Audit log.** Logins, failed logins, redemptions, wrong PINs and expired shares
   are all recorded. Nothing sends alerts.
 
-The full design and threat model is in the design spec.
 
 ## How sharing works
 
